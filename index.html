@@ -1,12 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        body{
+        margin: 0;
+        /* 漸層顏色 */
+        /* background: linear-gradient(to right,#09b9ee , #26d0ce);  */
+        background-color: #0E6584;
+    }
+    #all{
+        width: 100%;
+        height: 3000px;
+        /* background-color: rgb(156, 248, 248); */
+      
+    }
+    .content{
+        width: 100%;
+        height: 50px;
+        /* background-color: blue; */
+        justify-content: center;
+        margin-left: 400px;
+        
+        
+    }
+    .index{
+        width: 100%;
+        height: 1400px;
+        /* background-color: rgb(74, 146, 241); */
+     
+        
+    }
+     .content .btn_primary,.btn_secondary , .btn_success, .btn_danger{
+         width: 200px;
+         height:50px;
+         margin-right: 60px;
+         margin-top:60px;
+         border: 1px solid #22BFE6;
+         background: -webkit-gradient(linear, left top, left bottom, from(#2E7FF7), to(#3FC5FA));
+         background: -webkit-gradient(linear, left top, left bottom, from(#2E7FF7), to(#3FC5FA));
+         background: -webkit-linear-gradient(top, rgb(4, 170, 104), rgb(46, 241, 150));
+         background: -moz-linear-gradient(top, #2E7FF7, #3FC5FA);
+         background: -ms-linear-gradient(top, #2E7FF7, #3FC5FA);
+         background: -o-linear-gradient(top, #2E7FF7, #3FC5FA);
+         box-shadow: 0px 7px 2px -5px rgb(10, 3, 3), inset 0px 0px 0px #EBE6E6;
+        -webkit-border-radius: 27px;
+        -moz-border-radius: 27px;
+        border-radius: 27px;
+        text-shadow: #F5F5F5 1px 1px 0px;
+        color: #1A080F;
+        font-size: 26px;
+        letter-spacing: 10px;
+        font-family: '標楷體';
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+     }
+
+     .pic{
+         width: 760px;
+         height:700px;
+         background-image: url('02-img/01.Seven chakras/chakramp.png');
+         background-size: cover;
+         margin-left: 130px;
+         
+     }
+    
+
+     .movie{
+         margin-left: 130px;
+         margin-top: 60px;
+     }
+    /* 以下開始為脈輪區域 */
+    #Seven_chakras{
+        width: 100% ;
+        height: 1860px;
+        background: linear-gradient(to right,#185a9d , #26d0ce);
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        color:rgb(16, 4, 80);
+       
+       
+    }
+    .chakone,.chaktwo,.chakthree,.chakfour,.chakfive,.chaksix,.chakseven{
+        width: 850px;
+        height: 190px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        background-color: #f5b868;
+      
+    }
+    .chak_pic1,.chak_pic2,.chak_pic3,.chak_pic4,.chak_pic5,.chak_pic6,.chak_pic7{
+    
+        width: 145px;
+        height: 145px;
+        background-size: cover;
+        float: left;
+        border-radius:50%;
+        margin-top: 15px;
+       
+    }
+    .chak_pic1{ background-image: url('02-img/01.Seven chakras/1.Submarine.png');}
+    .chak_pic2{ background-image: url('02-img/01.Seven chakras/2.Umbilical.png');}
+    .chak_pic3{ background-image: url('02-img/01.Seven chakras/3.Solar plexus.png');}
+    .chak_pic4{ background-image: url('02-img/01.Seven chakras/4.Heart.png');}
+    .chak_pic5{ background-image: url('02-img/01.Seven chakras/5.Throat.png');}
+    .chak_pic6{ background-image: url('02-img/01.Seven chakras/6.Eyebrow.png');}
+    .chak_pic7{ background-image: url('02-img/01.Seven chakras/7.Top-wheel.png');}
+
+    .chak_text{
+        width: 650px;
+        height: 180px;
+        float: left;
+        margin-left: 20px; 
+     }
+         .chak_text li{
+             font-size: 20px;
+             margin-left: auto;
+             margin-right: auto;
+      }
+      /* 以下開始為瑜珈內容 */
+         #Yoga{
+            max-width: 100%;
+            height: 1100px;
+            clear:both; 
+            background: linear-gradient(to right,#f57105 , #f5b868);                 
+     }
+         .col{
+            width: 380px;
+            height:395px;
+            float: left;
+            margin-top: 60px;
+            padding: 35px;
+      }
+        .Yogapic1{
+            width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/01.Knee-infant.jpg');
+            background-size: cover;         
+        }
+        .Yogapic2{
+            width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/02.Triangular twist.jpg');
+            background-size: cover;              
+        }
+        .Yogapic3{
+            width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/3.Sitting posture.jpg');
+			background-size: cover;              
+        }
+        .Yogapic4{
+            width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/04.Crescent.jpg');
+			background-size: cover;              
+        }
+        .Yogapic5{
+            width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/5.Simple sitting.jpg');
+			background-size: cover;			
+        }
+        .Yogapic6{
+            width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/6.Dolphin.jpg');
+			background-size: cover;              
+        }
+        .Yogapic7{
+           width: 380px;
+            height: 250px;
+            background-image: url('02-img/02.modified/7.Toe deep balance.jpg');
+			background-size: cover;              
+        }
+         .Yogabottom{
+            width: 380px;
+	        height: 125px;
+	         border:solid 1px black;                        
+        }
+        .Yogabottom h2{
+           
+	    margin-left:150px;
+        }
+         .Yogabottom p{
+            
+	    margin-left:70px;
+            font-size: 16px;
+         }
+         /* 以下開始為腹式呼吸 */
+    #fc{
+        width: 100%        ;
+        height: 640px;
+     
+    }
+    .picture{
+        width: 700px;
+        height: 450px;
+        background-image: url('02-img/腹式呼吸好處.jpg');
+        background-size: cover;
+       float: left;
+       margin-left: 60px;
+       margin-top: 60px;
+    }
+    ol{width: 960px;
+    height: 185px;
+    background-color: rgb(175, 101, 245);
+    margin-left: auto;
+    margin-right: 60px;
+    margin-top: 60px;
+    font-size: 16px;
+    float: right;
+    }
+    /* 以下開始為心靈文章區域 */
+    #Mind_article{
+        width: 100%;
+        height: 700px;
+        background-color: #2E7FF7;
+     padding: 60px;
+    }
+    /* 文章內容區域 */
+    .article{
+        width: 960px;
+        height:480px;
+        background-color: #f5b868;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    </style>
 </head>
+
 <body>
-    123
+    <div id="all">
+        <div class="index">
+            <div class="content">
+                <button type="button" class=" btn_primary">七脈輪介紹</button>
+                <button type="button" class=" btn_secondary">瑜珈</button>
+                <button type="button" class=" btn_success">腹式呼吸</button>
+                <button type="button" class=" btn_danger">心靈文章</button>
+                <div class="pic"></div>
+                <div class="movie">
+                    <iframe width="760" height="440" src="https://www.youtube.com/embed/ABLFhLL62t4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            </div>
+        </div>
+        <div id="Seven_chakras">七脈輪介紹
+            <div class="chakone">
+                <div class="chak_pic1"></div>
+                <div class="chak_text">
+                    <ul>海底輪 vs 大地
+                        <li>元素：土</li>
+                        <li>位置：會陰部，可以延伸到雙腳腳底</li>
+                        <li>特質：脊椎底部、直腸、免疫系統</li>
+                        <li>能量意義:人類生存的本能能量與求生意志，慾望和獨處時的安全感</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chaktwo">
+                <div class="chak_pic2"></div>
+                <div class="chak_text">
+                    <ul>臍輪 vs 自制
+                        <li>元素：水</li>
+                        <li>位置：肚臍下方約三指寬度，大約是在丹田的位置</li>
+                        <li>特質：對應腎臟、腸、胰臟和腎上腺</li>
+                        <li>能量意義:性能量、創造力、勇敢、信任、奉獻</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chakthree">
+                <div class="chak_pic3"></div>
+                <div class="chak_text">
+                    <ul>太陽神經叢 vs 積極
+                        <li>元素：火</li>
+                        <li>位置：位於腹部中央部位</li>
+                        <li>特質：對應胃、腹部、脾臟、肝臟、脊椎</li>
+                        <li>能量意義:勇氣、力量，理智與限制、規範</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chakfour">
+                <div class="chak_pic4"></div>
+                <div class="chak_text">
+                    <ul>心輪 vs 療癒
+                        <li>元素：風</li>
+                        <li>位置：胸口胸腺的位置，即兩乳之間
+                        </li>
+                        <li>特質：對應呼吸循環系統、心臟、肺臟、免疫系統調節、胸腺</li>
+                        <li>能量意義:同理心、愛和慈悲</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chakfive">
+                <div class="chak_pic5"></div>
+                <div class="chak_text">
+                    <ul>喉輪 vs 自信
+                        <li>元素：光</li>
+                        <li>位置：位於咽喉處</li>
+                        <li>特質：喉嚨、口、食道、甲狀腺、神經中樞</li>
+                        <li>能量意義:和溝通、表達能力和創造力相關</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chaksix">
+                <div class="chak_pic6"></div>
+                <div class="chak_text">
+                    <ul>眉心輪 vs 自由
+                        <li>元素：靈光</li>
+                        <li>位置：前額兩眉心之間</li>
+                        <li>特質：臉部、眼睛、松果體、腦垂體</li>
+                        <li>能量意義:覺醒、超越與執著、覺察</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chakseven">
+                <div class="chak_pic7"></div>
+                <div class="chak_text">
+                    <ul>頂輪 vs 神靈
+                        <li>位置：位於頭頂百會穴的位置</li>
+                        <li>特質：腦部、皮膚、神經中樞、賀爾蒙平衡</li>
+                        <li>能量意義:和一個人的靈感、生存使命，領導力相關</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="Yoga">
+            <div class="col">
+                <div class="Yogapic1"></div>
+                <div class="Yogabottom">
+                    <h2>分膝嬰兒式</h2>
+                    <p>大腳趾併攏，膝蓋分開，<br>額頭著地，雙手伸直。</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Yogapic2"></div>
+                <div class="Yogabottom">
+                    <h2>三角式</h2>
+                    <p>左手朝前，右腳內扣，雙腿伸直，<br>右手撐地在外側，左手向上延展。</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Yogapic3"></div>
+                <div class="Yogabottom">
+                    <h2>扭轉變體</h2>
+                    <p>右腳彎曲，左腳伸直，<br>右手抓左腳外側，左手往後撐地。</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Yogapic4"></div>
+                <div class="Yogabottom">
+                    <h2>新月式</h2>
+                    <p>右腳踩地屈膝，左腿伸直，右小腿著地，<br>左手在左小腿，右手向上伸展。</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Yogapic5"></div>
+                <div class="Yogabottom">
+                    <h2>簡易坐</h2>
+                    <p>雙腿簡單盤坐，腹部內收，雙手掌心朝上，<br>
+                        閉上眼睛，唱誦Om10次以上</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Yogapic6"></div>
+                <div class="Yogabottom">
+                    <h2>海豚式</h2>
+                    <p>手肘撐地，腹部內收，雙腿保持伸直，<br>腳跟稍微離地，保持1分鐘</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="Yogapic7"></div>
+                <div class="Yogabottom">
+                    <h2>深蹲平衡</h2>
+                    <p>雙腳踩地，與髖同寬，<br>深蹲膝蓋向外打開，雙手合十向上。</p>
+                </div>
+            </div>
+        </div>
+        <div id="fc"><br>
+            <div class="picture"></div>
+            <ol>訣竅提點
+                <li>先做一至兩次充分的呼氣，將空氣從肺部的底層排出，使肺部呈現真空狀，使得下一次吸氣容易會是一個腹式呼吸。
+                </li>
+                <li>初學者可試著用用「鼻吸嘴吐」的方式來進行腹式呼吸，熟練後，若要使用「鼻吸鼻吐」的方式也是可以的。</li>
+                <li>想像肚子裡，有一個無形的氣球，再用放在腹部上的雙手去感覺，嘴巴吐氣時，把肚子裡的空氣吐光，可以感覺到腹部下降；鼻子吸氣時，可以感覺到腹部隆起。</li>
+                <li>如果感覺將空氣吸入腹部是有困難的，可試著呼氣時輕壓腹部，空氣會吐的更多一點，並在緩慢深吸氣時，讓空氣將你的手推上去</li>
+            </ol>
+            <ol>練習時機
+                <Li>準備入睡前</Li>
+                <Li>半夜醒來時</Li>
+                <Li>壓力來臨前</Li>
+                <Li>任何時機點</Li>
+            </ol>
+    
+        </div>
+    <div id="Mind_article">
+        <div class="article">
+            <br><h2>開啟心念 煩惱、負面意識轉變為正向</h2>
+            <p>心念，結合了眉心輪、頂輪及心輪的運轉。心輪從心臟中央往體表前後張開，宛如兩朵盛開的百合。眉心輪在兩眉之間，包括大腦前額葉、腦下垂體以及松果體。頂輪從前額髮際到頭頂中央百會，包含了大腦的感覺神經及運動神經。<br>
+
+                    <h3>心念來自無法分離的身心靈合一體，身體</h3>
+                    
+                    自從四百多年前伽利略發現地球繞著太陽轉，接著人類繼續發現其實太陽又繞著銀河轉，銀河可能繞著宇宙更大的中心旋轉，科學家們透過哈伯望遠鏡估算這個宇宙大約是一百三十億年，而地球存在不過四十六億年，如果把宇宙誕生至今每一億年當作一個月來計算，我們的宇宙才一歲多，在這一到十二個月的時間中，地球誕生在八九月的秋天，到了快要跨年的十二月最後幾天，人類才開始從猿人直立並且發生文化，而最古老的文明如埃及、印度以及中國，不過是十二月三十一日的最後幾個小時才出現。<br>
+                    <br>在這樣的宏觀中，我們有理由認為，所有的宗教都是各民族獨特的文化精粹，每一個民族在摸索的過程中，用自己的理解與虔誠的心念，創造了接觸進入正向的光能量最有效率的儀式和方法，那就是宗教。而眾神、上帝、諸佛菩薩，都是宇宙大光明的一部分，光與光之間當然是可以溝通的，教派名稱雖然歧異，本質卻是相同的。<br>
+                    <br>人體是小光體。有些人的心輪發出的是平靜的藍光，有些人是智慧的紫色光，另一些人是帶著力量的紫紅色光，光的震動波結合人們純淨的信任，很快就能讓小光體融入大光體，於是小光體中的煩惱與負面意識，就能在大光體中轉換、充電與得到光亮的改變。
+                    靈氣沒有宗教的界線，是一種接收正向能量的方法與工具。只要願意接觸學習，都可以完整進入這個方法，進入無限深廣的宇宙金庫，與正向的光能量共振，分享光能量無盡的祝福。信任，將開啟靈氣學習的道路。並且成為靈氣與光的傳遞管道。
+                    <br>（本文摘自／大人密碼：用靈氣召回金鑰匙／印刻出版）
+                    </p>
+
+        </div>
+    </div>    
+    </div>
+   
+
 </body>
+
 </html>
